@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <LinearLayout
+
+        android:background="#ffe624"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp"
+        android:layout_margin="20dp">
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            />
+
+        <TextView
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trucker's Hault Café"
+            android:textStyle="bold|italic"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="WE BRINGS YOU GREAT FOOD SUPER FAST"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="189dp"
+            android:layout_height="106dp"
+            android:layout_gravity="center"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:id="@+id/txtSlogan"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="@string/slogan"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+
+            android:layout_marginBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We need your location"
+            android:layout_marginTop="0dp"
+            android:textStyle="bold|italic"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            />
+        <Button
+            android:id="@+id/btnLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Detect my location"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="#ffe51a"
+            android:background="#000"
+            android:textStyle="bold"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="#ffe51a"
+            android:background="#000"
+            android:textStyle="bold"
+            android:id="@+id/btnhomelogin"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To use saved address"
+            android:textStyle="bold|italic"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+</LinearLayout>

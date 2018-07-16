@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "277182797235",
+    "firebase_url": "https://fir-loginapp-bd6d9.firebaseio.com",
+    "project_id": "fir-loginapp-bd6d9",
+    "storage_bucket": "fir-loginapp-bd6d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:277182797235:android:3e7270ee925a8429",
+        "android_client_info": {
+          "package_name": "com.example.asus.thc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "277182797235-db99j1pd4v0q8fg6td3lua580j0iq4pj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "277182797235-db99j1pd4v0q8fg6td3lua580j0iq4pj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbSw-VGCVbJOlA4fkYgwFpHT1jBP9frOE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
