@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">THC</string>
     <string name="slogan">No matter where you: whether you are at home, or in the office, or in a bus - We will find you and we will feed you.</string>
+    <string name="need_location">We need your location</string>
+    <string name="homepage_subheading">WE BRING YOU GREAT FOOD SUPER FAST</string>
+    <string name="welcome">Welcome To</string>
+    <string name="THC">Truckers Halt Café</string>
+    <string name="number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="phoneverificationmsg">We need to verify your phone number. This will take a few seconds.</string>
+    <string name="resendCodemsg">If you don't receive the code within 60 seconds. Please click on the RESEND CODE button.</string>
+    <string name="verified">VERIFIED</string>
 </resources>

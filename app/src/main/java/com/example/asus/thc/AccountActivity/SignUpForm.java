@@ -25,7 +25,7 @@ public class SignUpForm extends AppCompatActivity{
             public void onClick(View v) {
                 Intent intent = new Intent(
                         SignUpForm.this,
-                        SignInForm.class);
+                        SignUpVerification.class);
                 startActivity(intent);
 
             }

@@ -1,31 +1,35 @@
 {
   "project_info": {
-    "project_number": "277182797235",
-    "firebase_url": "https://fir-loginapp-bd6d9.firebaseio.com",
-    "project_id": "fir-loginapp-bd6d9",
-    "storage_bucket": "fir-loginapp-bd6d9.appspot.com"
+    "project_number": "79877204471",
+    "firebase_url": "https://truckershaultcafe.firebaseio.com",
+    "project_id": "truckershaultcafe",
+    "storage_bucket": "truckershaultcafe.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:277182797235:android:3e7270ee925a8429",
+        "mobilesdk_app_id": "1:79877204471:android:fa7cb7cdc4f64afe",
         "android_client_info": {
           "package_name": "com.example.asus.thc"
         }
       },
       "oauth_client": [
         {
-          "client_id": "277182797235-db99j1pd4v0q8fg6td3lua580j0iq4pj.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "79877204471-7snlrru8r8r9d3uta3ls0bparkof6isr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asus.thc",
+            "certificate_hash": "bfd9bfdff90e23aa913c0d971b5e006a1e146cde"
+          }
         },
         {
-          "client_id": "277182797235-db99j1pd4v0q8fg6td3lua580j0iq4pj.apps.googleusercontent.com",
+          "client_id": "79877204471-ue62rb7mdhuiok7scl2s023rs26p8i8f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDbSw-VGCVbJOlA4fkYgwFpHT1jBP9frOE"
+          "current_key": "AIzaSyBqjPOQFbOPwksj5aDtwS4L3HbcWYBzx38"
         }
       ],
       "services": {
@@ -33,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79877204471-ue62rb7mdhuiok7scl2s023rs26p8i8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

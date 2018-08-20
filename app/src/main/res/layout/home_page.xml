@@ -1,17 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000">
+    android:background="#000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 
     <LinearLayout
 
-        android:background="#ffe624"
+        android:background="#dfbd3f"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginTop="45dp"
-        android:layout_margin="20dp">
+        android:layout_margin="20dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
         <TextView
 
@@ -19,7 +26,7 @@
             android:layout_marginBottom="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome To"
+            android:text="@string/welcome"
             android:textStyle="bold"
             android:textSize="35sp"
             android:layout_gravity="center"
@@ -32,7 +39,7 @@
             android:layout_marginBottom="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Trucker's Hault Café"
+            android:text="@string/THC"
             android:textStyle="bold|italic"
             android:textSize="35sp"
             android:layout_gravity="center"
@@ -44,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="italic"
-            android:text="WE BRINGS YOU GREAT FOOD SUPER FAST"
+            android:text="@string/homepage_subheading"
             android:textColor="#000"
             android:textSize="15sp"
             android:layout_marginTop="10dp"/>
@@ -54,14 +61,14 @@
             android:layout_width="189dp"
             android:layout_height="106dp"
             android:layout_gravity="center"
-            android:src="@drawable/app_logo" />
+            android:src="@drawable/thc_app_logo_golden" />
 
         <TextView
             android:id="@+id/txtSlogan"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="italic"
+            android:textStyle="italic|bold"
             android:text="@string/slogan"
             android:textColor="#000"
             android:textSize="15sp"
@@ -74,7 +81,7 @@
             android:layout_marginBottom="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="We need your location"
+            android:text="@string/need_location"
             android:layout_marginTop="0dp"
             android:textStyle="bold|italic"
             android:textSize="17sp"
@@ -90,8 +97,8 @@
             android:layout_marginTop="5dp"
             android:padding="10dp"
             android:textSize="15sp"
-            android:textColor="#ffe51a"
-            android:background="#000"
+            android:textColor="#000000"
+            android:background="@color/buttonColor"
             android:textStyle="bold"/>
         <TextView
 
@@ -108,10 +115,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Login"
+            android:padding="10dp"
             android:layout_marginTop="5dp"
             android:textSize="15sp"
-            android:textColor="#ffe51a"
-            android:background="#000"
+            android:textColor="#000000"
+            android:shadowColor="#000"
+            android:background="@color/buttonColor"
             android:textStyle="bold"
             android:id="@+id/btnhomelogin"
 

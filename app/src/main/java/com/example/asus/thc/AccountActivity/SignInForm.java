@@ -2,8 +2,10 @@ package com.example.asus.thc.AccountActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -11,21 +13,35 @@ import android.widget.Toast;
 
 import com.example.asus.thc.Model.User;
 import com.example.asus.thc.R;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseException;
+import com.google.firebase.FirebaseTooManyRequestsException;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.PhoneAuthCredential;
+import com.google.firebase.auth.PhoneAuthProvider;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.concurrent.TimeUnit;
+
 public class SignInForm extends AppCompatActivity {
 
-    EditText edtPhone;
-    EditText edtPassword;
-    Button loginBtn;
-    Button signupBtn;
+    private EditText edtPhone;
+    private EditText edtPassword;
+    private Button loginBtn;
+    private Button signupBtn;
+
+    DatabaseReference table_user;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_in_form);
 
@@ -36,11 +52,7 @@ public class SignInForm extends AppCompatActivity {
 
         //INIT FIREBASE
 
-        FirebaseDatabase database;
-        database = FirebaseDatabase.getInstance();
-        final DatabaseReference table_user;
-        table_user = database.getReference("User");
-
+        table_user = FirebaseDatabase.getInstance().getReference("User");
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +62,7 @@ public class SignInForm extends AppCompatActivity {
                 mDialog.setMessage("Please waiting...");
                 mDialog.show();
 
-                table_user.addValueEventListener(new ValueEventListener(){
+                table_user.child("User").addValueEventListener(new ValueEventListener(){
 
 
                     @Override
@@ -67,6 +79,7 @@ public class SignInForm extends AppCompatActivity {
                             }
                         }
                         else{
+                            mDialog.dismiss();
                             Toast.makeText(SignInForm.this, "User does not exist. Please sign up!", Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -90,7 +103,12 @@ public class SignInForm extends AppCompatActivity {
 
         });
 
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
 
-
+                                        }
+        });
     }
+
 }
