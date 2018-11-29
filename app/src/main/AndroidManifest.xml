@@ -18,7 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AccountActivity.SignInForm"/>
+        <activity
+            android:name=".AccountActivity.SignInForm"
+            android:theme="@style/NoActionBarTheme" />
         <activity android:name=".AccountActivity.SignUpForm" />
         <activity android:name=".AccountActivity.SignUpVerification" />
         <activity android:name=".AccountActivity.SignUpSuccess" />
